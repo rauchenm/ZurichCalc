@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.326644370122631" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainControl">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="583.0" prefWidth="289.0">
+         <children>
+            <Label layoutX="145.0" layoutY="53.0" text="Stufe" />
+            <ChoiceBox fx:id="cbGruppe" layoutX="41.0" layoutY="79.0" prefHeight="25.0" prefWidth="73.0" />
+            <Label layoutX="41.0" layoutY="53.0" text="Gruppe" />
+            <ChoiceBox fx:id="cbStufe" layoutX="145.0" layoutY="79.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="tbAnpProz" layoutX="38.0" layoutY="228.0" prefHeight="25.0" prefWidth="73.0" />
+            <Button fx:id="btBerechnung" layoutX="78.0" layoutY="512.0" mnemonicParsing="false" onAction="#calcAll" prefHeight="25.0" prefWidth="115.0" text="Berechnung" />
+            <TextField fx:id="tbAnzWochenStd" layoutX="38.0" layoutY="314.0" prefHeight="25.0" prefWidth="73.0" />
+            <CheckBox fx:id="checkProz" layoutX="37.0" layoutY="197.0" mnemonicParsing="false" text="Erhöhung in Prozent" />
+            <CheckBox fx:id="checkStunden" layoutX="36.0" layoutY="283.0" mnemonicParsing="false" text="Anzahl der Wochenstunden" />
+            <CheckBox fx:id="checkDiff" layoutX="37.0" layoutY="377.0" mnemonicParsing="false" text="Differenz zu Stufe" />
+            <ChoiceBox fx:id="cbDiffGruppe" layoutX="38.0" layoutY="436.0" prefHeight="25.0" prefWidth="73.0" />
+            <CheckBox fx:id="check14" layoutX="145.0" layoutY="147.0" mnemonicParsing="false" text="14 Gehälter" />
+            <Label layoutX="37.0" layoutY="412.0" text="Gruppe" />
+            <Label layoutX="141.0" layoutY="411.0" prefHeight="17.0" prefWidth="28.0" text="Stufe" />
+            <ChoiceBox fx:id="cbDiffStufe" layoutX="141.0" layoutY="437.0" prefHeight="25.0" prefWidth="73.0" />
+            <Separator layoutX="25.0" layoutY="180.0" prefWidth="200.0" />
+            <Separator layoutX="25.0" layoutY="266.0" prefWidth="200.0" />
+            <Separator layoutX="25.0" layoutY="356.0" prefWidth="200.0" />
+            <Separator layoutX="25.0" layoutY="483.0" prefWidth="200.0" />
+            <TextField fx:id="tfUeberz" layoutX="40.0" layoutY="143.0" prefHeight="25.0" prefWidth="71.0" text="0.0" />
+            <Label layoutX="41.0" layoutY="119.0" text="Überzahlung " />
+            <Label layoutX="30.0" layoutY="15.0" text="Zurich Gehaltsberechnung" textFill="#4b19d3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <TextArea fx:id="taErgebnis" layoutX="72.0" layoutY="99.0" prefHeight="583.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
